@@ -15,4 +15,10 @@ $sugar_config['aop']['case_status_changes'] = '{"Open_New":"Closed_Closed","Open
 $sugar_config['disabled_languages'] = '';
 $sugar_config['dbconfigoption']['collation'] = 'utf8_general_ci';
 $sugar_config['default_language'] = 'es_ES';
+$sugar_config['default_currency_iso4217'] = '$';
+$sugar_config['default_currency_name'] = 'Pesos';
+$sugar_config['default_date_format'] = 'd/m/Y';
+$sugar_config['default_decimal_seperator'] = ',';
+$sugar_config['default_locale_name_format'] = 'f l';
+$sugar_config['default_number_grouping_seperator'] = '.';
 /***CONFIGURATOR***/
