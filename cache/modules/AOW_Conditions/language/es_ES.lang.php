@@ -1,0 +1,27 @@
+<?php
+// created: 2017-08-30 04:51:40
+$mod_strings = array (
+  'LBL_ID' => 'ID',
+  'LBL_DATE_ENTERED' => 'Fecha de Creación',
+  'LBL_DATE_MODIFIED' => 'Fecha de Modificación',
+  'LBL_MODIFIED' => 'Modificado por',
+  'LBL_MODIFIED_ID' => 'Modificado por ID',
+  'LBL_MODIFIED_NAME' => 'Modificado por Nombre',
+  'LBL_CREATED_USER' => 'Creado por Usuario',
+  'LBL_MODIFIED_USER' => 'Modificado por el usuario',
+  'LBL_CREATED' => 'Creado por',
+  'LBL_CREATED_ID' => 'Creado por ID',
+  'LBL_DESCRIPTION' => 'Descripción',
+  'LBL_DELETED' => 'Eliminado',
+  'LBL_NAME' => 'Nombre',
+  'LBL_MODULE_NAME' => 'Condiciones de WorkFlow',
+  'LBL_MODULE_TITLE' => 'Condiciones de WorkFlow',
+  'LBL_MODULE_PATH' => 'Módulo',
+  'LBL_FIELD' => 'Campo',
+  'LBL_OPERATOR' => 'Operador',
+  'LBL_VALUE_TYPE' => 'Tipo',
+  'LBL_VALUE' => 'Valor',
+  'LBL_ORDER' => 'Orden',
+  'LBL_CONDITION_OPERATOR' => 'Operador de la Condición',
+  'LBL_AOW_WORKFLOW_ID' => 'ID de WorkFlow',
+);
