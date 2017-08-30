@@ -51,9 +51,23 @@ array (
             'name' => 'serial_nbr_c',
             'label' => 'LBL_SERIAL_NBR',
           ),
-          1 => 'priority',
+          1 => 
+          array (
+            'name' => 'case_number',
+            'label' => 'LBL_CASE_NUMBER',
+          ),
         ),
         1 => 
+        array (
+          0 => 'priority',
+          1 => 
+          array (
+            'name' => 'case_attachments_display',
+            'studio' => 'visible',
+            'label' => 'LBL_CASE_ATTACHMENTS_DISPLAY',
+          ),
+        ),
+        2 => 
         array (
           0 => 
           array (
@@ -63,7 +77,7 @@ array (
           ),
           1 => 'status',
         ),
-        2 => 
+        3 => 
         array (
           0 => 'account_name',
           1 => 
@@ -72,7 +86,7 @@ array (
             'label' => 'LBL_USE_EMAIL',
           ),
         ),
-        3 => 
+        4 => 
         array (
           0 => 
           array (
@@ -85,15 +99,15 @@ array (
             'label' => 'LBL_SUGGESTION_BOX',
           ),
         ),
-        4 => 
+        5 => 
         array (
           0 => 'description',
         ),
-        5 => 
+        6 => 
         array (
           0 => 'resolution',
         ),
-        6 => 
+        7 => 
         array (
           0 => 
           array (
@@ -102,7 +116,7 @@ array (
             'label' => 'LBL_UPDATE_TEXT',
           ),
         ),
-        7 => 
+        8 => 
         array (
           0 => 
           array (
@@ -111,7 +125,7 @@ array (
             'label' => 'LBL_INTERNAL',
           ),
         ),
-        8 => 
+        9 => 
         array (
           0 => 
           array (
@@ -120,7 +134,7 @@ array (
             'label' => 'LBL_CASE_UPDATE_FORM',
           ),
         ),
-        9 => 
+        10 => 
         array (
           0 => 
           array (

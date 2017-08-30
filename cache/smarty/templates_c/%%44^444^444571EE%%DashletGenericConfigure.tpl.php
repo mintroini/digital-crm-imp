@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.29, created on 2017-08-30 05:24:46
+<?php /* Smarty version 2.6.29, created on 2017-08-30 06:07:19
          compiled from include/Dashlets/DashletGenericConfigure.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
 smarty_core_load_plugins(array('plugins' => array(array('function', 'html_options', 'include/Dashlets/DashletGenericConfigure.tpl', 75, false),)), $this); ?>

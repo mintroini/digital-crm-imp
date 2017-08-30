@@ -1,5 +1,5 @@
 <?php
-// created: 2017-08-30 04:51:30
+// created: 2017-08-30 05:58:13
 $mod_strings = array (
   'LBL_ID' => 'ID',
   'LBL_DATE_ENTERED' => 'Date Created:',
@@ -110,4 +110,5 @@ $mod_strings = array (
   'LBL_CASE_UPDATE_FORM' => 'Update attachment form',
   'LBL_SERIAL_NBR' => 'Nro. #',
   'LBL_USE_EMAIL' => 'Send emails?',
+  'LBL_EDITVIEW_PANEL1' => 'New Panel 1',
 );

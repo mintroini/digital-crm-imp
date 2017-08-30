@@ -124,6 +124,35 @@ value='{$value}' title=''      >
 <div class="col-xs-12 col-sm-6 edit-view-row-item">
 
 
+<div class="col-xs-12 col-sm-4 label" data-label="LBL_NUMBER">
+
+{capture name="label" assign="label"}{sugar_translate label='LBL_NUMBER' module='Cases'}{/capture}
+{$label|strip_semicolon}:
+
+<span class="required">*</span>
+</div>
+
+<div class="col-xs-12 col-sm-8 edit-view-field " type="int" field="case_number"  >
+{counter name="panelFieldCount" print=false}
+
+{if strlen($fields.case_number.value) <= 0}
+{assign var="value" value=$fields.case_number.default_value }
+{else}
+{assign var="value" value=$fields.case_number.value }
+{/if} 
+<span class="sugar_field" id="{$fields.case_number.name}">{$fields.case_number.value}</span>
+</div>
+
+<!-- [/hide] -->
+</div>
+<div class="clear"></div>
+<div class="clear"></div>
+
+
+
+<div class="col-xs-12 col-sm-6 edit-view-row-item">
+
+
 <div class="col-xs-12 col-sm-4 label" data-label="LBL_PRIORITY">
 
 {capture name="label" assign="label"}{sugar_translate label='LBL_PRIORITY' module='Cases'}{/capture}
@@ -383,6 +412,26 @@ onclick="SUGAR.clearRelateField(this.form, '{$fields.priority.name}-input', '{$f
 </script> 
 {/literal}
 {/if}
+</div>
+
+<!-- [/hide] -->
+</div>
+
+
+<div class="col-xs-12 col-sm-6 edit-view-row-item">
+
+
+<div class="col-xs-12 col-sm-4 label" data-label="LBL_CASE_ATTACHMENTS_DISPLAY">
+
+{capture name="label" assign="label"}{sugar_translate label='LBL_CASE_ATTACHMENTS_DISPLAY' module='Cases'}{/capture}
+{$label|strip_semicolon}:
+
+</div>
+
+<div class="col-xs-12 col-sm-8 edit-view-field " type="function" field="case_attachments_display"  >
+{counter name="panelFieldCount" print=false}
+<span id='case_attachments_display_span'>
+{$fields.case_attachments_display.value}</span>
 </div>
 
 <!-- [/hide] -->

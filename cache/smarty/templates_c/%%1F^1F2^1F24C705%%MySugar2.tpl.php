@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.29, created on 2017-08-30 04:41:43
+<?php /* Smarty version 2.6.29, created on 2017-08-30 06:05:19
          compiled from themes%5CSuiteP%5Cinclude/MySugar/tpls/MySugar2.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
 smarty_core_load_plugins(array('plugins' => array(array('function', 'sugar_getscript', 'themes\\SuiteP\\include/MySugar/tpls/MySugar2.tpl', 62, false),array('function', 'counter', 'themes\\SuiteP\\include/MySugar/tpls/MySugar2.tpl', 72, false),array('function', 'sugar_getjspath', 'themes\\SuiteP\\include/MySugar/tpls/MySugar2.tpl', 161, false),)), $this); ?>

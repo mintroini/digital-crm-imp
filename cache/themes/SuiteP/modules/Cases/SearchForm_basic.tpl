@@ -36,6 +36,32 @@
     }
 	<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 search_fields_basic">
 		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+						<label for='serial_nbr_c_basic' >{sugar_translate label='LBL_SERIAL_NBR' module='Cases'}</label>
+					</div>
+		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-8">
+		
+{if strlen($fields.serial_nbr_c_basic.value) <= 0}
+{assign var="value" value=$fields.serial_nbr_c_basic.default_value }
+{else}
+{assign var="value" value=$fields.serial_nbr_c_basic.value }
+{/if}  
+<input type='text' name='{$fields.serial_nbr_c_basic.name}' 
+    id='{$fields.serial_nbr_c_basic.name}' size='30' 
+    maxlength='255' 
+    value='{$value}' title=''  tabindex='-1'      accesskey='9'  >
+		</div>
+		<div class="search-clear"></div>
+	</div>
+    
+      
+	{counter assign=index}
+	{math equation="left % right"
+   		  left=$index
+          right=$basicMaxColumns
+          assign=modVal
+    }
+	<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 search_fields_basic">
+		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
 						<label for='name_basic'> {sugar_translate label='LBL_SUBJECT' module='Cases'}</label>
 					</div>
 		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-8">
@@ -48,7 +74,7 @@
 <input type='text' name='{$fields.name_basic.name}' 
     id='{$fields.name_basic.name}' size='30' 
     maxlength='255' 
-    value='{$value}' title=''  tabindex='-1'      accesskey='9'  >
+    value='{$value}' title=''  tabindex='-1'      >
 		</div>
 		<div class="search-clear"></div>
 	</div>

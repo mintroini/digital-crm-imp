@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.29, created on 2017-08-30 05:44:42
+<?php /* Smarty version 2.6.29, created on 2017-08-30 05:55:33
          compiled from modules/Administration/templates/GlobalSearchSettings.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
 smarty_core_load_plugins(array('plugins' => array(array('function', 'sugar_getjspath', 'modules/Administration/templates/GlobalSearchSettings.tpl', 58, false),array('function', 'sugar_translate', 'modules/Administration/templates/GlobalSearchSettings.tpl', 114, false),)), $this); ?>

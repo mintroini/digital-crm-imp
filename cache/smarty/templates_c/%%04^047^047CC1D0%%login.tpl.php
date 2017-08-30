@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.29, created on 2017-08-30 05:36:50
+<?php /* Smarty version 2.6.29, created on 2017-08-30 06:12:54
          compiled from themes/SuiteP/tpls/login.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
 smarty_core_load_plugins(array('plugins' => array(array('function', 'sugar_translate', 'themes/SuiteP/tpls/login.tpl', 42, false),)), $this); ?>
@@ -18,9 +18,8 @@ smarty_core_load_plugins(array('plugins' => array(array('function', 'sugar_trans
 <div class="p_login">
 
 	<div class="p_login_top">
-		
 		<!-- <a title="SuiteCRM" href="http://www.suitecrm.com">SuiteCRM</a> -->
-<div class="companylogo"><?php echo $this->_tpl_vars['LOGIN_IMAGE']; ?>
+    <div class="companylogo"><?php echo $this->_tpl_vars['LOGIN_IMAGE']; ?>
 </div>
 
 	</div>

@@ -1,7 +1,7 @@
-<?php /* Smarty version 2.6.29, created on 2017-08-30 05:17:06
+<?php /* Smarty version 2.6.29, created on 2017-08-30 06:05:23
          compiled from cache/themes/SuiteP/modules/Cases/SearchForm_basic.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
-smarty_core_load_plugins(array('plugins' => array(array('function', 'counter', 'cache/themes/SuiteP/modules/Cases/SearchForm_basic.tpl', 31, false),array('function', 'math', 'cache/themes/SuiteP/modules/Cases/SearchForm_basic.tpl', 32, false),array('function', 'sugar_translate', 'cache/themes/SuiteP/modules/Cases/SearchForm_basic.tpl', 38, false),array('function', 'sugar_getimagepath', 'cache/themes/SuiteP/modules/Cases/SearchForm_basic.tpl', 139, false),)), $this); ?>
+smarty_core_load_plugins(array('plugins' => array(array('function', 'counter', 'cache/themes/SuiteP/modules/Cases/SearchForm_basic.tpl', 31, false),array('function', 'math', 'cache/themes/SuiteP/modules/Cases/SearchForm_basic.tpl', 32, false),array('function', 'sugar_translate', 'cache/themes/SuiteP/modules/Cases/SearchForm_basic.tpl', 38, false),array('function', 'sugar_getimagepath', 'cache/themes/SuiteP/modules/Cases/SearchForm_basic.tpl', 164, false),)), $this); ?>
 
 <input type='hidden' id="orderByInput" name='orderBy' value=''/>
 <input type='hidden' id="sortOrder" name='sortOrder' value=''/>
@@ -39,6 +39,34 @@ smarty_core_load_plugins(array('plugins' => array(array('function', 'counter', '
 
 	<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 search_fields_basic">
 		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+						<label for='serial_nbr_c_basic' ><?php echo smarty_function_sugar_translate(array('label' => 'LBL_SERIAL_NBR','module' => 'Cases'), $this);?>
+</label>
+					</div>
+		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-8">
+		
+<?php if (strlen ( $this->_tpl_vars['fields']['serial_nbr_c_basic']['value'] ) <= 0): ?>
+<?php $this->assign('value', $this->_tpl_vars['fields']['serial_nbr_c_basic']['default_value']); ?>
+<?php else: ?>
+<?php $this->assign('value', $this->_tpl_vars['fields']['serial_nbr_c_basic']['value']); ?>
+<?php endif; ?>  
+<input type='text' name='<?php echo $this->_tpl_vars['fields']['serial_nbr_c_basic']['name']; ?>
+' 
+    id='<?php echo $this->_tpl_vars['fields']['serial_nbr_c_basic']['name']; ?>
+' size='30' 
+    maxlength='255' 
+    value='<?php echo $this->_tpl_vars['value']; ?>
+' title=''  tabindex='-1'      accesskey='9'  >
+		</div>
+		<div class="search-clear"></div>
+	</div>
+    
+      
+	<?php echo smarty_function_counter(array('assign' => 'index'), $this);?>
+
+	<?php echo smarty_function_math(array('equation' => "left % right",'left' => $this->_tpl_vars['index'],'right' => $this->_tpl_vars['basicMaxColumns'],'assign' => 'modVal'), $this);?>
+
+	<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 search_fields_basic">
+		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
 						<label for='name_basic'> <?php echo smarty_function_sugar_translate(array('label' => 'LBL_SUBJECT','module' => 'Cases'), $this);?>
 </label>
 					</div>
@@ -55,7 +83,7 @@ smarty_core_load_plugins(array('plugins' => array(array('function', 'counter', '
 ' size='30' 
     maxlength='255' 
     value='<?php echo $this->_tpl_vars['value']; ?>
-' title=''  tabindex='-1'      accesskey='9'  >
+' title=''  tabindex='-1'      >
 		</div>
 		<div class="search-clear"></div>
 	</div>

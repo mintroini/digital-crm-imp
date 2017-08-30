@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.29, created on 2017-08-30 05:10:06
+<?php /* Smarty version 2.6.29, created on 2017-08-30 06:06:24
          compiled from include/MySugar/tpls/dashletsSearchResults.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
 smarty_core_load_plugins(array('plugins' => array(array('function', 'counter', 'include/MySugar/tpls/dashletsSearchResults.tpl', 46, false),)), $this); ?>

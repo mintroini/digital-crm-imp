@@ -124,6 +124,40 @@
 <div class="col-xs-12 col-sm-4 label col-2-label">
 
 
+{capture name="label" assign="label"}{sugar_translate label='LBL_CASE_NUMBER' module='Cases'}{/capture}
+{$label|strip_semicolon}:
+</div>
+
+
+<div class="col-xs-12 col-sm-8 detail-view-field " type="int" field="case_number"  >
+
+{if !$fields.case_number.hidden}
+{counter name="panelFieldCount" print=false}
+
+<span class="sugar_field" id="{$fields.case_number.name}">
+{assign var="value" value=$fields.case_number.value }
+{$value}
+</span>
+{/if}
+
+</div>
+
+
+</div>
+
+</div>
+
+
+<div class="row detail-view-row">
+
+
+
+<div class="col-xs-12 col-sm-6 detail-view-row-item">
+
+
+<div class="col-xs-12 col-sm-4 label col-1-label">
+
+
 {capture name="label" assign="label"}{sugar_translate label='LBL_PRIORITY' module='Cases'}{/capture}
 {$label|strip_semicolon}:
 </div>
@@ -142,6 +176,37 @@
 <input type="hidden" class="sugar_field" id="{$fields.priority.name}" value="{ $fields.priority.value }">
 { $fields.priority.options[$fields.priority.value]}
 {/if}
+{/if}
+
+</div>
+
+<div class="inlineEditIcon col-xs-hidden">
+{sugar_getimage name="inline_edit_icon.svg" attr='border="0" ' alt="$alt_edit"}
+</div>
+
+</div>
+
+
+
+
+<div class="col-xs-12 col-sm-6 detail-view-row-item">
+
+
+<div class="col-xs-12 col-sm-4 label col-2-label">
+
+
+{capture name="label" assign="label"}{sugar_translate label='LBL_CASE_ATTACHMENTS_DISPLAY' module='Cases'}{/capture}
+{$label|strip_semicolon}:
+</div>
+
+
+<div class="col-xs-12 col-sm-8 detail-view-field inlineEdit" type="function" field="case_attachments_display"  >
+
+{if !$fields.case_attachments_display.hidden}
+{counter name="panelFieldCount" print=false}
+<span id='case_attachments_display_span'>
+{$fields.case_attachments_display.value}
+</span>
 {/if}
 
 </div>

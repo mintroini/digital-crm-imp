@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.29, created on 2017-08-30 04:46:18
+<?php /* Smarty version 2.6.29, created on 2017-08-30 05:51:47
          compiled from themes%5CSuiteP%5Cinclude/DetailView/header.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
 smarty_core_load_plugins(array('plugins' => array(array('function', 'counter', 'themes\\SuiteP\\include/DetailView/header.tpl', 89, false),)), $this); ?>
