@@ -1,8 +1,6 @@
 <?php
-// created: 2017-08-30 04:58:12
+// created: 2017-08-31 03:55:36
 $mod_strings = array (
-  'LBL_ASSIGNED_TO_ID' => 'Id Usuario Asignado',
-  'LBL_ASSIGNED_TO_NAME' => 'Asignado a',
   'LBL_ID' => 'ID',
   'LBL_DATE_ENTERED' => 'Fecha de Creación',
   'LBL_DATE_MODIFIED' => 'Fecha de Modificación',
@@ -14,10 +12,15 @@ $mod_strings = array (
   'LBL_DESCRIPTION' => 'Descripción',
   'LBL_DELETED' => 'Eliminado',
   'LBL_NAME' => 'Nombre',
-  'LBL_SAVING' => 'Guardando...',
-  'LBL_SAVED' => 'Guardado',
   'LBL_CREATED_USER' => 'Creado Por Usuario',
   'LBL_MODIFIED_USER' => 'Modificado por el usuario',
+  'LBL_LIST_NAME' => 'Nombre',
+  'LBL_EDIT_BUTTON' => 'Editar',
+  'LBL_REMOVE' => 'Quitar',
+  'LBL_ASSIGNED_TO_ID' => 'Id Usuario Asignado',
+  'LBL_ASSIGNED_TO_NAME' => 'Asignado a',
+  'LBL_SAVING' => 'Guardando...',
+  'LBL_SAVED' => 'Guardado',
   'LBL_LIST_FORM_TITLE' => 'Lista Feed',
   'LBL_MODULE_NAME' => 'Flujos de Actividad',
   'LBL_MODULE_TITLE' => 'Flujos de Actividad',

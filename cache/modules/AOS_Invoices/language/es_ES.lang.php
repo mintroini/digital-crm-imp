@@ -1,8 +1,6 @@
 <?php
-// created: 2017-08-30 04:51:30
+// created: 2017-08-31 03:55:36
 $mod_strings = array (
-  'LBL_ASSIGNED_TO_ID' => 'Asignado a Id de Usuario',
-  'LBL_ASSIGNED_TO_NAME' => 'Asignado a',
   'LBL_ID' => 'ID',
   'LBL_DATE_ENTERED' => 'Fecha de Creación',
   'LBL_DATE_MODIFIED' => 'Fecha de Modificación',
@@ -16,6 +14,13 @@ $mod_strings = array (
   'LBL_NAME' => 'Título',
   'LBL_CREATED_USER' => 'Creado Por Usuario',
   'LBL_MODIFIED_USER' => 'Modificado por el usuario',
+  'LBL_LIST_NAME' => 'Nombre',
+  'LBL_EDIT_BUTTON' => 'Editar',
+  'LBL_REMOVE' => 'Quitar',
+  'LBL_ASSIGNED_TO_ID' => 'Asignado a Id de Usuario',
+  'LBL_ASSIGNED_TO_NAME' => 'Asignado a',
+  'LBL_SECURITYGROUPS' => 'Grupos de Seguridad',
+  'LBL_SECURITYGROUPS_SUBPANEL_TITLE' => 'Grupos de Seguridad',
   'ACCOUNT_REMOVE_PROJECT_CONFIRM' => '¿Está usted seguro que quiere eliminar esta cuenta de este proyecto?',
   'ERR_DELETE_RECORD' => 'Debe especificar un registro para borrarlo de la cuenta.',
   'LBL_ACCOUNT_NAME' => 'Título',

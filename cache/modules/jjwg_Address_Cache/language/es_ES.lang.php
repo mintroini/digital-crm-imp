@@ -1,8 +1,6 @@
 <?php
-// created: 2017-08-30 04:51:30
+// created: 2017-08-31 03:55:36
 $mod_strings = array (
-  'LBL_ASSIGNED_TO_ID' => 'Id de Usuario Asignado',
-  'LBL_ASSIGNED_TO_NAME' => 'Assignado a',
   'LBL_ID' => 'ID',
   'LBL_DATE_ENTERED' => 'Fecha de Creación',
   'LBL_DATE_MODIFIED' => 'Fecha de Modificación',
@@ -17,6 +15,10 @@ $mod_strings = array (
   'LBL_CREATED_USER' => 'Creado por Usuario',
   'LBL_MODIFIED_USER' => 'Modificado por el usuario',
   'LBL_LIST_NAME' => 'Dirección',
+  'LBL_EDIT_BUTTON' => 'Editar',
+  'LBL_REMOVE' => 'Quitar',
+  'LBL_ASSIGNED_TO_ID' => 'Id de Usuario Asignado',
+  'LBL_ASSIGNED_TO_NAME' => 'Assignado a',
   'LBL_LIST_FORM_TITLE' => 'Lista de Caché de Direcciones',
   'LBL_MODULE_NAME' => 'Caché de Direcciones',
   'LBL_MODULE_TITLE' => 'Caché de Direcciones',

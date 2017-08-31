@@ -1,6 +1,8 @@
 <?php
-// created: 2017-08-30 04:51:30
+// created: 2017-08-31 03:55:35
 $mod_strings = array (
+  'LBL_SECURITYGROUPS' => 'Grupos de Seguridad',
+  'LBL_SECURITYGROUPS_SUBPANEL_TITLE' => 'Grupos de Seguridad',
   'LBL_ADD_ANOTHER_FILE' => 'Agregar Otro Archivo',
   'LBL_ADD_DOCUMENT' => 'Agregar un Documento',
   'LBL_ADD_FILE' => 'Agregar un archivo',

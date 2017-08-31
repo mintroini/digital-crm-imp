@@ -1,8 +1,6 @@
 <?php
-// created: 2017-08-30 04:51:43
+// created: 2017-08-31 03:55:36
 $mod_strings = array (
-  'LBL_ASSIGNED_TO_ID' => 'ID Usuario Asignado',
-  'LBL_ASSIGNED_TO_NAME' => 'Asignado a',
   'LBL_ID' => 'ID',
   'LBL_DATE_ENTERED' => 'Fecha de Creación',
   'LBL_DATE_MODIFIED' => 'Fecha de Modificación',
@@ -17,6 +15,10 @@ $mod_strings = array (
   'LBL_CREATED_USER' => 'Creado por Usuario',
   'LBL_MODIFIED_USER' => 'Modificado por el usuario',
   'LBL_LIST_NAME' => 'Nombre',
+  'LBL_EDIT_BUTTON' => 'Editar',
+  'LBL_REMOVE' => 'Quitar',
+  'LBL_ASSIGNED_TO_ID' => 'ID Usuario Asignado',
+  'LBL_ASSIGNED_TO_NAME' => 'Asignado a',
   'LBL_LIST_FORM_TITLE' => 'Lista de Auditoría de Procesos',
   'LBL_MODULE_NAME' => 'Auditoría de Procesos',
   'LBL_MODULE_TITLE' => 'Auditoría de Procesos',

@@ -1,10 +1,6 @@
 <?php
-// created: 2017-08-30 04:51:30
+// created: 2017-08-31 03:55:35
 $mod_strings = array (
-  'LBL_ASSIGNED_TO_ID' => 'Asignado a Usuario con Id',
-  'LBL_ASSIGNED_TO_NAME' => 'Asignado a',
-  'LBL_SECURITYGROUPS' => 'Grupos de Seguridad',
-  'LBL_SECURITYGROUPS_SUBPANEL_TITLE' => 'Grupos de Seguridad',
   'LBL_ID' => 'ID',
   'LBL_DATE_ENTERED' => 'Fecha de Creación',
   'LBL_DATE_MODIFIED' => 'Última Modificación',
@@ -21,6 +17,10 @@ $mod_strings = array (
   'LBL_LIST_NAME' => 'Nombre',
   'LBL_EDIT_BUTTON' => 'Editar',
   'LBL_REMOVE' => 'Quitar',
+  'LBL_ASSIGNED_TO_ID' => 'Asignado a Usuario con Id',
+  'LBL_ASSIGNED_TO_NAME' => 'Asignado a',
+  'LBL_SECURITYGROUPS' => 'Grupos de Seguridad',
+  'LBL_SECURITYGROUPS_SUBPANEL_TITLE' => 'Grupos de Seguridad',
   'LBL_LIST_FORM_TITLE' => 'Listado',
   'LBL_MODULE_NAME' => 'Tabla dinámica',
   'LBL_MODULE_TITLE' => 'Tabla dinámica',

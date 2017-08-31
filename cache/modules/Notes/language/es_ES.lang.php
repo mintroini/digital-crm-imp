@@ -1,6 +1,10 @@
 <?php
-// created: 2017-08-30 04:51:30
+// created: 2017-08-31 03:55:35
 $mod_strings = array (
+  'LBL_ASSIGNED_TO_ID' => 'Asignado a Usuario con Id',
+  'LBL_ASSIGNED_TO_NAME' => 'Asignado a',
+  'LBL_SECURITYGROUPS' => 'Grupos de Seguridad',
+  'LBL_SECURITYGROUPS_SUBPANEL_TITLE' => 'Grupos de Seguridad',
   'ERR_DELETE_RECORD' => 'Debe especificar un número de registro para eliminar la cuenta.',
   'LBL_ACCOUNT_ID' => 'ID de Cuenta:',
   'LBL_CASE_ID' => 'ID Caso:',

@@ -1,5 +1,5 @@
 <?php
-// created: 2017-08-30 04:51:40
+// created: 2017-08-31 03:55:36
 $mod_strings = array (
   'LBL_ID' => 'ID',
   'LBL_DATE_ENTERED' => 'Fecha de Creación',
@@ -7,13 +7,16 @@ $mod_strings = array (
   'LBL_MODIFIED' => 'Modificado por',
   'LBL_MODIFIED_ID' => 'Modificado por ID',
   'LBL_MODIFIED_NAME' => 'Modificado por Nombre',
-  'LBL_CREATED_USER' => 'Creado por Usuario',
-  'LBL_MODIFIED_USER' => 'Modificado por el usuario',
   'LBL_CREATED' => 'Creado por',
   'LBL_CREATED_ID' => 'Creado por ID',
   'LBL_DESCRIPTION' => 'Descripción',
   'LBL_DELETED' => 'Eliminado',
   'LBL_NAME' => 'Nombre',
+  'LBL_CREATED_USER' => 'Creado por Usuario',
+  'LBL_MODIFIED_USER' => 'Modificado por el usuario',
+  'LBL_LIST_NAME' => 'Nombre',
+  'LBL_EDIT_BUTTON' => 'Editar',
+  'LBL_REMOVE' => 'Quitar',
   'LBL_MODULE_NAME' => 'Acciones de WorkFlow',
   'LBL_MODULE_TITLE' => 'Acciones de WorkFlow',
   'LBL_AOW_WORKFLOW_ID' => 'ID de WorkFlow',
