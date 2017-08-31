@@ -1,7 +1,7 @@
-<?php /* Smarty version 2.6.29, created on 2017-08-30 06:16:41
-         compiled from cache/themes/SuiteP/modules/Cases/SearchFormFooter.tpl */ ?>
+<?php /* Smarty version 2.6.29, created on 2017-08-30 23:41:34
+         compiled from cache/themes/SuiteP/modules/AOS_PDF_Templates/SearchFormFooter.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
-smarty_core_load_plugins(array('plugins' => array(array('function', 'sugar_getimagepath', 'cache/themes/SuiteP/modules/Cases/SearchFormFooter.tpl', 11, false),array('function', 'sugar_translate', 'cache/themes/SuiteP/modules/Cases/SearchFormFooter.tpl', 12, false),)), $this); ?>
+smarty_core_load_plugins(array('plugins' => array(array('function', 'sugar_getimagepath', 'cache/themes/SuiteP/modules/AOS_PDF_Templates/SearchFormFooter.tpl', 11, false),array('function', 'sugar_translate', 'cache/themes/SuiteP/modules/AOS_PDF_Templates/SearchFormFooter.tpl', 12, false),)), $this); ?>
 
 </form>
 <?php echo '

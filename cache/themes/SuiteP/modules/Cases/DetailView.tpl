@@ -56,7 +56,7 @@
 </li>
 {if $config.enable_action_menu and $config.enable_action_menu != false}
 <li id="tab-actions" class="dropdown">
-<a class="dropdown-toggle" data-toggle="dropdown" href="#">ACTIONS</a>
+<a class="dropdown-toggle" data-toggle="dropdown" href="#">Acciones</a>
 <ul class="dropdown-menu">
 <li>{if $bean->aclAccess("edit")}<input title="{$APP.LBL_EDIT_BUTTON_TITLE}" accessKey="{$APP.LBL_EDIT_BUTTON_KEY}" class="button primary" onclick="var _form = document.getElementById('formDetailView'); _form.return_module.value='Cases'; _form.return_action.value='DetailView'; _form.return_id.value='{$id}'; _form.action.value='EditView';SUGAR.ajaxUI.submitForm(_form);" type="button" name="Edit" id="edit_button" value="{$APP.LBL_EDIT_BUTTON_LABEL}">{/if} </li>
 <li>{if $bean->aclAccess("edit")}<input title="{$APP.LBL_DUPLICATE_BUTTON_TITLE}" accessKey="{$APP.LBL_DUPLICATE_BUTTON_KEY}" class="button" onclick="var _form = document.getElementById('formDetailView'); _form.return_module.value='Cases'; _form.return_action.value='DetailView'; _form.isDuplicate.value=true; _form.action.value='EditView'; _form.return_id.value='{$id}';SUGAR.ajaxUI.submitForm(_form);" type="button" name="Duplicate" value="{$APP.LBL_DUPLICATE_BUTTON_LABEL}" id="duplicate_button">{/if} </li>
@@ -152,10 +152,10 @@
 
 
 
-<div class="col-xs-12 col-sm-6 detail-view-row-item">
+<div class="col-xs-12 col-sm-12 detail-view-row-item">
 
 
-<div class="col-xs-12 col-sm-4 label col-1-label">
+<div class="col-xs-12 col-sm-2 label col-1-label">
 
 
 {capture name="label" assign="label"}{sugar_translate label='LBL_PRIORITY' module='Cases'}{/capture}
@@ -163,7 +163,7 @@
 </div>
 
 
-<div class="col-xs-12 col-sm-8 detail-view-field inlineEdit" type="enum" field="priority"  >
+<div class="col-xs-12 col-sm-10 detail-view-field inlineEdit" type="enum" field="priority" colspan='3' >
 
 {if !$fields.priority.hidden}
 {counter name="panelFieldCount" print=false}
@@ -176,37 +176,6 @@
 <input type="hidden" class="sugar_field" id="{$fields.priority.name}" value="{ $fields.priority.value }">
 { $fields.priority.options[$fields.priority.value]}
 {/if}
-{/if}
-
-</div>
-
-<div class="inlineEditIcon col-xs-hidden">
-{sugar_getimage name="inline_edit_icon.svg" attr='border="0" ' alt="$alt_edit"}
-</div>
-
-</div>
-
-
-
-
-<div class="col-xs-12 col-sm-6 detail-view-row-item">
-
-
-<div class="col-xs-12 col-sm-4 label col-2-label">
-
-
-{capture name="label" assign="label"}{sugar_translate label='LBL_CASE_ATTACHMENTS_DISPLAY' module='Cases'}{/capture}
-{$label|strip_semicolon}:
-</div>
-
-
-<div class="col-xs-12 col-sm-8 detail-view-field inlineEdit" type="function" field="case_attachments_display"  >
-
-{if !$fields.case_attachments_display.hidden}
-{counter name="panelFieldCount" print=false}
-<span id='case_attachments_display_span'>
-{$fields.case_attachments_display.value}
-</span>
 {/if}
 
 </div>
@@ -500,79 +469,6 @@
 {counter name="panelFieldCount" print=false}
 
 <span class="sugar_field" id="{$fields.resolution.name|escape:'html'|url2html|nl2br}">{$fields.resolution.value|escape:'html'|escape:'html_entity_decode'|url2html|nl2br}</span>
-{/if}
-
-</div>
-
-<div class="inlineEditIcon col-xs-hidden">
-{sugar_getimage name="inline_edit_icon.svg" attr='border="0" ' alt="$alt_edit"}
-</div>
-
-</div>
-
-</div>
-
-
-<div class="row detail-view-row">
-
-
-
-<div class="col-xs-12 col-sm-12 detail-view-row-item">
-
-
-<div class="col-xs-12 col-sm-2 label col-1-label">
-
-
-{capture name="label" assign="label"}{sugar_translate label='LBL_UPDATE_TEXT' module='Cases'}{/capture}
-{$label|strip_semicolon}:
-</div>
-
-
-<div class="col-xs-12 col-sm-10 detail-view-field inlineEdit" type="text" field="update_text" colspan='3' >
-
-{if !$fields.update_text.hidden}
-{counter name="panelFieldCount" print=false}
-
-<span class="sugar_field" id="{$fields.update_text.name|url2html|nl2br}">{$fields.update_text.value|escape:'html_entity_decode'|url2html|nl2br}</span>
-{/if}
-
-</div>
-
-<div class="inlineEditIcon col-xs-hidden">
-{sugar_getimage name="inline_edit_icon.svg" attr='border="0" ' alt="$alt_edit"}
-</div>
-
-</div>
-
-</div>
-
-
-<div class="row detail-view-row">
-
-
-
-<div class="col-xs-12 col-sm-12 detail-view-row-item">
-
-
-<div class="col-xs-12 col-sm-2 label col-1-label">
-
-
-{capture name="label" assign="label"}{sugar_translate label='LBL_INTERNAL' module='Cases'}{/capture}
-{$label|strip_semicolon}:
-</div>
-
-
-<div class="col-xs-12 col-sm-10 detail-view-field inlineEdit" type="bool" field="internal" colspan='3' >
-
-{if !$fields.internal.hidden}
-{counter name="panelFieldCount" print=false}
-
-{if strval($fields.internal.value) == "1" || strval($fields.internal.value) == "yes" || strval($fields.internal.value) == "on"} 
-{assign var="checked" value='checked="checked"'}
-{else}
-{assign var="checked" value=""}
-{/if}
-<input type="checkbox" class="checkbox" name="{$fields.internal.name}" id="{$fields.internal.name}" value="$fields.internal.value" disabled="true" {$checked}>
 {/if}
 
 </div>

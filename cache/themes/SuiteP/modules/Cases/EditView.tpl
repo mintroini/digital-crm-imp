@@ -150,17 +150,17 @@ value='{$value}' title=''      >
 
 
 
-<div class="col-xs-12 col-sm-6 edit-view-row-item">
+<div class="col-xs-12 col-sm-12 edit-view-row-item">
 
 
-<div class="col-xs-12 col-sm-4 label" data-label="LBL_PRIORITY">
+<div class="col-xs-12 col-sm-2 label" data-label="LBL_PRIORITY">
 
 {capture name="label" assign="label"}{sugar_translate label='LBL_PRIORITY' module='Cases'}{/capture}
 {$label|strip_semicolon}:
 
 </div>
 
-<div class="col-xs-12 col-sm-8 edit-view-field " type="enum" field="priority"  >
+<div class="col-xs-12 col-sm-8 edit-view-field " type="enum" field="priority" colspan='3' >
 {counter name="panelFieldCount" print=false}
 
 {if !isset($config.enable_autocomplete) || $config.enable_autocomplete==false}
@@ -416,27 +416,6 @@ onclick="SUGAR.clearRelateField(this.form, '{$fields.priority.name}-input', '{$f
 
 <!-- [/hide] -->
 </div>
-
-
-<div class="col-xs-12 col-sm-6 edit-view-row-item">
-
-
-<div class="col-xs-12 col-sm-4 label" data-label="LBL_CASE_ATTACHMENTS_DISPLAY">
-
-{capture name="label" assign="label"}{sugar_translate label='LBL_CASE_ATTACHMENTS_DISPLAY' module='Cases'}{/capture}
-{$label|strip_semicolon}:
-
-</div>
-
-<div class="col-xs-12 col-sm-8 edit-view-field " type="function" field="case_attachments_display"  >
-{counter name="panelFieldCount" print=false}
-<span id='case_attachments_display_span'>
-{$fields.case_attachments_display.value}</span>
-</div>
-
-<!-- [/hide] -->
-</div>
-<div class="clear"></div>
 <div class="clear"></div>
 
 
@@ -1203,84 +1182,6 @@ title='' tabindex="0"
 <div class="col-xs-12 col-sm-12 edit-view-row-item">
 
 
-<div class="col-xs-12 col-sm-2 label" data-label="LBL_UPDATE_TEXT">
-
-{capture name="label" assign="label"}{sugar_translate label='LBL_UPDATE_TEXT' module='Cases'}{/capture}
-{$label|strip_semicolon}:
-
-</div>
-
-<div class="col-xs-12 col-sm-8 edit-view-field " type="text" field="update_text" colspan='3' >
-{counter name="panelFieldCount" print=false}
-
-{if empty($fields.update_text.value)}
-{assign var="value" value=$fields.update_text.default_value }
-{else}
-{assign var="value" value=$fields.update_text.value }
-{/if}
-<textarea  id='{$fields.update_text.name}' name='{$fields.update_text.name}'
-rows="6"
-cols="80"
-title='' tabindex="0" 
- >{$value}</textarea>
-{literal}<script type="text/javascript" language="Javascript" src="include/javascript/tiny_mce/tiny_mce.js?v=ERXpwwnmk40XkJzQrc5MCg"></script>
-<script type="text/javascript" language="Javascript">
-<!--
-$( document ).ready(function() {
-    if (!SUGAR.util.isTouchScreen()) {
-        if(tinyMCE.editors.length == 0 ){
-            tinyMCE.init({"convert_urls":false,"valid_children":"+body[style]","height":300,"width":"100%","theme":"advanced","theme_advanced_toolbar_align":"left","theme_advanced_toolbar_location":"top","theme_advanced_buttons1":"code,separator,bold,italic,underline,strikethrough,separator,bullist,numlist,separator,justifyleft,justifycenter,justifyright,\n\t                     \t\t\t\t\tjustifyfull,separator,link,unlink,separator,forecolor,backcolor,separator,formatselect,fontselect,fontsizeselect,","theme_advanced_buttons2":"","theme_advanced_buttons3":"","strict_loading_mode":true,"mode":"exact","language":"en","plugins":"advhr,insertdatetime,table,preview,paste,searchreplace,directionality","elements":"update_text","extended_valid_elements":"style[dir|lang|media|title|type],hr[class|width|size|noshade],@[class|style]","content_css":"include\/javascript\/tiny_mce\/themes\/advanced\/skins\/default\/content.css","directionality":"ltr"});
-        }else{
-           tinyMCE.execCommand('mceAddControl', false, document.getElementById('update_text'));
-
-        }      
-    } else {    document.getElementById('update_text').style.width = '100%';
-    document.getElementById('update_text').style.height = '100px';    }
-});
--->
-</script>
-{/literal}
-</div>
-
-<!-- [/hide] -->
-</div>
-<div class="clear"></div>
-
-
-
-<div class="col-xs-12 col-sm-12 edit-view-row-item">
-
-
-<div class="col-xs-12 col-sm-2 label" data-label="LBL_INTERNAL">
-
-{capture name="label" assign="label"}{sugar_translate label='LBL_INTERNAL' module='Cases'}{/capture}
-{$label|strip_semicolon}:
-
-</div>
-
-<div class="col-xs-12 col-sm-8 edit-view-field " type="bool" field="internal" colspan='3' >
-{counter name="panelFieldCount" print=false}
-
-{if strval($fields.internal.value) == "1" || strval($fields.internal.value) == "yes" || strval($fields.internal.value) == "on"} 
-{assign var="checked" value='checked="checked"'}
-{else}
-{assign var="checked" value=""}
-{/if}
-<input type="hidden" name="{$fields.internal.name}" value="0"> 
-<input type="checkbox" id="{$fields.internal.name}" 
-name="{$fields.internal.name}" 
-value="1" title='' tabindex="0" {$checked} >
-</div>
-
-<!-- [/hide] -->
-</div>
-<div class="clear"></div>
-
-
-
-<div class="col-xs-12 col-sm-12 edit-view-row-item">
-
-
 <div class="col-xs-12 col-sm-2 label" data-label="LBL_CASE_UPDATE_FORM">
 
 {capture name="label" assign="label"}{sugar_translate label='LBL_CASE_UPDATE_FORM' module='Cases'}{/capture}
@@ -1474,4 +1375,4 @@ addToValidate('EditView', 'serial_nbr_c', 'varchar', true,'{/literal}{sugar_tran
 addToValidate('EditView', 'use_email_c', 'bool', false,'{/literal}{sugar_translate label='LBL_USE_EMAIL' module='Cases' for_js=true}{literal}' );
 addToValidateBinaryDependency('EditView', 'assigned_user_name', 'alpha', false,'{/literal}{sugar_translate label='ERR_SQS_NO_MATCH_FIELD' module='Cases' for_js=true}{literal}: {/literal}{sugar_translate label='LBL_ASSIGNED_TO' module='Cases' for_js=true}{literal}', 'assigned_user_id' );
 addToValidateBinaryDependency('EditView', 'account_name', 'alpha', true,'{/literal}{sugar_translate label='ERR_SQS_NO_MATCH_FIELD' module='Cases' for_js=true}{literal}: {/literal}{sugar_translate label='LBL_ACCOUNT_NAME' module='Cases' for_js=true}{literal}', 'account_id' );
-</script><script language="javascript">if(typeof sqs_objects == 'undefined'){var sqs_objects = new Array;}sqs_objects['EditView_account_name']={"form":"EditView","method":"query","modules":["Accounts"],"group":"or","field_list":["name","id"],"populate_list":["EditView_account_name","account_id"],"conditions":[{"name":"name","op":"like_custom","end":"%","value":""}],"required_list":["account_id"],"order":"name","limit":"30","no_match_text":"No Match"};sqs_objects['EditView_assigned_user_name']={"form":"EditView","method":"get_user_array","field_list":["user_name","id"],"populate_list":["assigned_user_name","assigned_user_id"],"required_list":["assigned_user_id"],"conditions":[{"name":"user_name","op":"like_custom","end":"%","value":""}],"limit":"30","no_match_text":"No Match"};</script>{/literal}
+</script><script language="javascript">if(typeof sqs_objects == 'undefined'){var sqs_objects = new Array;}sqs_objects['EditView_account_name']={"form":"EditView","method":"query","modules":["Accounts"],"group":"or","field_list":["name","id"],"populate_list":["EditView_account_name","account_id"],"conditions":[{"name":"name","op":"like_custom","end":"%","value":""}],"required_list":["account_id"],"order":"name","limit":"30","no_match_text":"Sin coincidencias"};sqs_objects['EditView_assigned_user_name']={"form":"EditView","method":"get_user_array","field_list":["user_name","id"],"populate_list":["assigned_user_name","assigned_user_id"],"required_list":["assigned_user_id"],"conditions":[{"name":"user_name","op":"like_custom","end":"%","value":""}],"limit":"30","no_match_text":"Sin coincidencias"};</script>{/literal}

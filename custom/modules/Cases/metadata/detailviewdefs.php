@@ -60,12 +60,6 @@ array (
         1 => 
         array (
           0 => 'priority',
-          1 => 
-          array (
-            'name' => 'case_attachments_display',
-            'studio' => 'visible',
-            'label' => 'LBL_CASE_ATTACHMENTS_DISPLAY',
-          ),
         ),
         2 => 
         array (
@@ -111,30 +105,12 @@ array (
         array (
           0 => 
           array (
-            'name' => 'update_text',
-            'studio' => 'visible',
-            'label' => 'LBL_UPDATE_TEXT',
-          ),
-        ),
-        8 => 
-        array (
-          0 => 
-          array (
-            'name' => 'internal',
-            'studio' => 'visible',
-            'label' => 'LBL_INTERNAL',
-          ),
-        ),
-        9 => 
-        array (
-          0 => 
-          array (
             'name' => 'case_update_form',
             'studio' => 'visible',
             'label' => 'LBL_CASE_UPDATE_FORM',
           ),
         ),
-        10 => 
+        8 => 
         array (
           0 => 
           array (
