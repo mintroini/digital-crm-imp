@@ -25,32 +25,16 @@ class CasesViewDetail extends ViewDetail
 
     function display()
     {
-        echo "<script>console.log( 'display 1' );</script>";
-
         $this->populateCasesTemplates();
-        echo "<script>console.log( 'display 2' );</script>";
-
-
         $this->displayPopupHtml();
-        echo "<script>console.log( 'display 3' );</script>";
-
         parent::display();
-        echo "<script>console.log( 'display 4' );</script>";
-
     }
 
     function populateCasesTemplates()
     {
-        echo "<script>console.log( 'Debug Objects: ' );</script>";
         global $app_list_strings;
-
         $sql = "SELECT id, name FROM aos_pdf_templates WHERE deleted = 0 AND type='Cases' AND active = 1";
-
-
-
         $res = $this->bean->db->query($sql);
-
-//        echo "<script>console.log( 'res Objects: ". $res ." ' );</script>";
 
         $app_list_strings['template_ddown_c_list'] = array();
         while ($row = $this->bean->db->fetchByAssoc($res)) {

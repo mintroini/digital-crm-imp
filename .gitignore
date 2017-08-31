@@ -1,5 +1,5 @@
-
 cache/
+cache/*
 suitecrm.log
 cache/themes/SuiteP/pathCache.php
 cache/modules/Accounts/Accountvardefs.php
