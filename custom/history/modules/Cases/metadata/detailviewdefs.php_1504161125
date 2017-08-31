@@ -59,13 +59,17 @@ array (
         1 => 
         array (
           0 => 'priority',
-          1 => 
+        ),
+        2 => 
+        array (
+          0 => 
           array (
             'name' => 'user_notified_c',
             'label' => 'LBL_USER_NOTIFIED',
           ),
+          1 => '',
         ),
-        2 => 
+        3 => 
         array (
           0 => 
           array (
@@ -75,7 +79,7 @@ array (
           ),
           1 => 'status',
         ),
-        3 => 
+        4 => 
         array (
           0 => 'account_name',
           1 => 
@@ -84,7 +88,7 @@ array (
             'label' => 'LBL_USE_EMAIL',
           ),
         ),
-        4 => 
+        5 => 
         array (
           0 => 
           array (
@@ -97,15 +101,15 @@ array (
             'label' => 'LBL_SUGGESTION_BOX',
           ),
         ),
-        5 => 
+        6 => 
         array (
           0 => 'description',
         ),
-        6 => 
+        7 => 
         array (
           0 => 'resolution',
         ),
-        7 => 
+        8 => 
         array (
           0 => 
           array (
