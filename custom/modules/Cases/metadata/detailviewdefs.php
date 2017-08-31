@@ -13,7 +13,10 @@ array (
           1 => 'DUPLICATE',
           2 => 'DELETE',
           3 => 'FIND_DUPLICATES',
-          4 => array ( 'customCode' => '<input type="button" class="button" onClick="showPopup(\'pdf\');"value="{$MOD.LBL_PRINT_AS_PDF}">',),
+          4 =>
+          array (
+            'customCode' => '<input type="button" class="button" onClick="showPopup(\'pdf\');"value="{$MOD.LBL_PRINT_AS_PDF}">',
+          ),
         ),
       ),
       'maxColumns' => '2',
@@ -106,15 +109,6 @@ array (
         array (
           0 =>
           array (
-            'name' => 'case_update_form',
-            'studio' => 'visible',
-            'label' => 'LBL_CASE_UPDATE_FORM',
-          ),
-        ),
-        8 =>
-        array (
-          0 =>
-          array (
             'name' => 'assigned_user_name',
             'label' => 'LBL_ASSIGNED_TO',
           ),
@@ -132,7 +126,10 @@ $viewdefs['Cases']['DetailView']['templateMeta'] = array (
       1 => 'DUPLICATE',
       2 => 'DELETE',
       3 => 'FIND_DUPLICATES',
-      4 => array ( 'customCode' => '<input type="button" class="button" onClick="showPopup(\'pdf\');"value="{$MOD.LBL_PRINT_AS_PDF}">',),
+      4 =>
+      array (
+        'customCode' => '<input type="button" class="button" onClick="showPopup(\'pdf\');"value="{$MOD.LBL_PRINT_AS_PDF}">',
+      ),
     ),
   ),
   'maxColumns' => '2',

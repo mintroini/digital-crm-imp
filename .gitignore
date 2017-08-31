@@ -1,3 +1,10 @@
 
 cache/
 suitecrm.log
+cache/themes/SuiteP/pathCache.php
+cache/modules/Accounts/Accountvardefs.php
+cache/modules/Accounts/language/es_ES.lang.php
+cache/modules/ACLActions/ACLActionvardefs.php
+cache/modules/ACLRoles/ACLRolevardefs.php
+cache/modules/Administration/Administrationvardefs.php
+cache/modules/AM_TaskTemplates/language/es_ES.lang.php

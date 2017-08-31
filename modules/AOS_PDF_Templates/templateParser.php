@@ -52,6 +52,8 @@ class templateParser
 
     function parse_template_bean($string, $key, &$focus)
     {
+      require_once('include/SugarLogger/LoggerManager.php');
+      $GLOBALS['log'] = LoggerManager::getLogger('SugarCRM');
         global $app_strings, $sugar_config;
         $repl_arr = array();
 
@@ -79,10 +81,21 @@ class templateParser
                     }
                     $link = $secureLink;
                     $repl_arr[$key . "_" . $fieldName] = '<img src="' . $link . '" width="'.$field_def['width'].'" height="'.$field_def['height'].'"/>';
-                } else {
+                }
+                 else if($field_def['type'] == 'text') {
+                    $GLOBALS['log']->fatal("wysiwyg Martin: ". $focus->$field_def['name'] ."");
+
+                		//			$repl_arr[$key."_".$field_def['name']] = html_entity_decode($focus->$field_def['name'], ENT_COMPAT, 'UTF-8');
+                    $repl_arr[$key . "_" . $fieldName] = html_entity_decode( $focus->$fieldName, ENT_COMPAT, 'UTF-8');
+                }
+                 else {
+                   $GLOBALS['log']->fatal("ELSE -> Martin2:" . $field_def['name'] . " - ".$field_def['type'] ."");
+
                     $repl_arr[$key . "_" . $fieldName] = $focus->$fieldName;
                 }
+
             }
+
         } // end foreach()
 
         krsort($repl_arr);
