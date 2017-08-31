@@ -1,17 +1,17 @@
 <?php
 // created: 2017-08-31 05:36:26
 $sugar_config = array (
-  'addAjaxBannedModules' => 
+  'addAjaxBannedModules' =>
   array (
     0 => 'SecurityGroups',
   ),
   'admin_access_control' => false,
   'admin_export_only' => false,
-  'aod' => 
+  'aod' =>
   array (
     'enable_aod' => true,
   ),
-  'aop' => 
+  'aop' =>
   array (
     'distribution_method' => 'roundRobin',
     'case_closure_email_template_id' => '639f5a64-87a9-68a1-f234-59a631700ab6',
@@ -23,7 +23,7 @@ $sugar_config = array (
     'joomla_url' => '',
     'enable_portal' => false,
     'distribution_user_id' => '',
-    'distribution_options' => 
+    'distribution_options' =>
     array (
       0 => 'all',
       1 => '',
@@ -33,30 +33,30 @@ $sugar_config = array (
     'support_from_name' => '',
     'case_status_changes' => '{"Open_New":"Closed_Closed","Open_Assigned":"Closed_Closed","Open_Pending Input":"Closed_Closed"}',
   ),
-  'aos' => 
+  'aos' =>
   array (
     'version' => '5.3.3',
-    'contracts' => 
+    'contracts' =>
     array (
       'renewalReminderPeriod' => '14',
     ),
-    'lineItems' => 
+    'lineItems' =>
     array (
       'totalTax' => false,
       'enableGroups' => true,
     ),
-    'invoices' => 
+    'invoices' =>
     array (
       'initialNumber' => '1',
     ),
-    'quotes' => 
+    'quotes' =>
     array (
       'initialNumber' => '1',
     ),
   ),
   'cache_dir' => 'cache/',
   'calculate_response_time' => true,
-  'calendar' => 
+  'calendar' =>
   array (
     'default_view' => 'week',
     'show_calls_by_default' => true,
@@ -74,21 +74,21 @@ $sugar_config = array (
   'chartEngine' => 'Jit',
   'common_ml_dir' => '',
   'create_default_user' => false,
-  'cron' => 
+  'cron' =>
   array (
     'max_cron_jobs' => 10,
     'max_cron_runtime' => 30,
     'min_cron_interval' => 30,
   ),
   'currency' => '',
-  'dashlet_display_row_options' => 
+  'dashlet_display_row_options' =>
   array (
     0 => '1',
     1 => '3',
     2 => '5',
     3 => '10',
   ),
-  'date_formats' => 
+  'date_formats' =>
   array (
     'Y-m-d' => '2010-12-23',
     'm-d-Y' => '12-23-2010',
@@ -101,7 +101,7 @@ $sugar_config = array (
     'm.d.Y' => '12.23.2010',
   ),
   'datef' => 'm/d/Y',
-  'dbconfig' => 
+  'dbconfig' =>
   array (
     'db_host_name' => 'localhost:3306',
     'db_host_instance' => 'SQLEXPRESS',
@@ -112,7 +112,7 @@ $sugar_config = array (
     'db_port' => '',
     'db_manager' => 'MysqliManager',
   ),
-  'dbconfigoption' => 
+  'dbconfigoption' =>
   array (
     'persistent' => true,
     'autofree' => false,
@@ -122,93 +122,93 @@ $sugar_config = array (
   ),
   'default_action' => 'index',
   'default_charset' => 'UTF-8',
-  'default_currencies' => 
+  'default_currencies' =>
   array (
-    'AUD' => 
+    'AUD' =>
     array (
       'name' => 'Australian Dollars',
       'iso4217' => 'AUD',
       'symbol' => '$',
     ),
-    'BRL' => 
+    'BRL' =>
     array (
       'name' => 'Brazilian Reais',
       'iso4217' => 'BRL',
       'symbol' => 'R$',
     ),
-    'GBP' => 
+    'GBP' =>
     array (
       'name' => 'British Pounds',
       'iso4217' => 'GBP',
       'symbol' => '£',
     ),
-    'CAD' => 
+    'CAD' =>
     array (
       'name' => 'Canadian Dollars',
       'iso4217' => 'CAD',
       'symbol' => '$',
     ),
-    'CNY' => 
+    'CNY' =>
     array (
       'name' => 'Chinese Yuan',
       'iso4217' => 'CNY',
       'symbol' => '￥',
     ),
-    'EUR' => 
+    'EUR' =>
     array (
       'name' => 'Euro',
       'iso4217' => 'EUR',
       'symbol' => '€',
     ),
-    'HKD' => 
+    'HKD' =>
     array (
       'name' => 'Hong Kong Dollars',
       'iso4217' => 'HKD',
       'symbol' => '$',
     ),
-    'INR' => 
+    'INR' =>
     array (
       'name' => 'Indian Rupees',
       'iso4217' => 'INR',
       'symbol' => '₨',
     ),
-    'KRW' => 
+    'KRW' =>
     array (
       'name' => 'Korean Won',
       'iso4217' => 'KRW',
       'symbol' => '₩',
     ),
-    'YEN' => 
+    'YEN' =>
     array (
       'name' => 'Japanese Yen',
       'iso4217' => 'JPY',
       'symbol' => '¥',
     ),
-    'MXN' => 
+    'MXN' =>
     array (
       'name' => 'Mexican Pesos',
       'iso4217' => 'MXN',
       'symbol' => '$',
     ),
-    'SGD' => 
+    'SGD' =>
     array (
       'name' => 'Singaporean Dollars',
       'iso4217' => 'SGD',
       'symbol' => '$',
     ),
-    'CHF' => 
+    'CHF' =>
     array (
       'name' => 'Swiss Franc',
       'iso4217' => 'CHF',
       'symbol' => 'SFr.',
     ),
-    'THB' => 
+    'THB' =>
     array (
       'name' => 'Thai Baht',
       'iso4217' => 'THB',
       'symbol' => '฿',
     ),
-    'USD' => 
+    'USD' =>
     array (
       'name' => 'US Dollars',
       'iso4217' => 'USD',
@@ -232,7 +232,7 @@ $sugar_config = array (
   'default_navigation_paradigm' => 'gm',
   'default_number_grouping_seperator' => '.',
   'default_password' => '',
-  'default_permissions' => 
+  'default_permissions' =>
   array (
     'dir_mode' => 1528,
     'file_mode' => 493,
@@ -271,7 +271,7 @@ $sugar_config = array (
   'import_max_records_per_file' => 100,
   'import_max_records_total_limit' => '',
   'installer_locked' => true,
-  'jobs' => 
+  'jobs' =>
   array (
     'min_retry_interval' => 30,
     'max_retries' => 5,
@@ -279,7 +279,7 @@ $sugar_config = array (
   ),
   'js_custom_version' => 1,
   'js_lang_version' => 5,
-  'languages' => 
+  'languages' =>
   array (
     'en_us' => 'English (US)',
     'es_ES' => 'Español (España) - es_ES',
@@ -294,10 +294,10 @@ $sugar_config = array (
   'log_dir' => '.',
   'log_file' => 'suitecrm.log',
   'log_memory_usage' => false,
-  'logger' => 
+  'logger' =>
   array (
     'level' => 'fatal',
-    'file' => 
+    'file' =>
     array (
       'ext' => '.log',
       'name' => 'suitecrm',
@@ -308,7 +308,7 @@ $sugar_config = array (
     ),
   ),
   'max_dashlets_homepage' => '15',
-  'name_formats' => 
+  'name_formats' =>
   array (
     's f l' => 's f l',
     'f l' => 'f l',
@@ -319,7 +319,7 @@ $sugar_config = array (
     'l s f' => 'l s f',
     'l f s' => 'l f s',
   ),
-  'passwordsetting' => 
+  'passwordsetting' =>
   array (
     'SystemGeneratedPasswordON' => true,
     'generatepasswordtmpl' => 'dfe21d3d-a0ea-7bd3-487a-59a631273c50',
@@ -339,10 +339,10 @@ $sugar_config = array (
   ),
   'portal_view' => 'single_user',
   'require_accounts' => true,
-  'resource_management' => 
+  'resource_management' =>
   array (
     'special_query_limit' => 50000,
-    'special_query_modules' => 
+    'special_query_modules' =>
     array (
       0 => 'Reports',
       1 => 'Export',
@@ -369,12 +369,12 @@ $sugar_config = array (
   'session_dir' => '',
   'showDetailData' => true,
   'showThemePicker' => true,
-  'site_url' => 'http://localhost/digital',
+  'site_url' => 'http://192.168.0.75/digital',
   'slow_query_time_msec' => '100',
   'sugar_version' => '6.5.24',
   'sugarbeet' => false,
   'suitecrm_version' => '7.9.4',
-  'time_formats' => 
+  'time_formats' =>
   array (
     'H:i' => '23:00',
     'h:ia' => '11:00pm',
@@ -392,7 +392,7 @@ $sugar_config = array (
   'tracker_max_display_length' => 15,
   'translation_string_prefix' => false,
   'unique_key' => '8c13ee5c6cd26e7af97ddefab2cab1b0',
-  'upload_badext' => 
+  'upload_badext' =>
   array (
     0 => 'php',
     1 => 'php3',
